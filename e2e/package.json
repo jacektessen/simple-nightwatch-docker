@@ -1,0 +1,17 @@
+{
+  "name": "intro-nightwatch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "nw": "nightwatch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chromedriver": "^89.0.0",
+    "nightwatch": "^1.6.0"
+  }
+}

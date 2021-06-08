@@ -1,0 +1,24 @@
+{
+  "src_folders": ["./tests/"],
+  "output_folder": "tests_output",
+
+  "test_settings": {
+    "default": {
+      "selenium_port": 4444,
+      "selenium_host": "127.0.0.1",
+      "silent": true,
+      "screenshots": {
+        "enabled": false,
+        "path": ""
+      },
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true,
+        "chromeOptions": {
+          "args": ["headless", "no-sandbox", "disable-gpu"]
+        }
+      }
+    }
+  }
+}

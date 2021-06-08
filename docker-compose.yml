@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  chrome:
+    image: selenium/standalone-chrome:4.0.0-beta-4-prerelease-20210604
+    volumes:
+      - /dev/shm:/dev/shm
+    ports:
+      - "4444:4444"
+
+  e2e:
+    build: ./e2e
+    image: ai_e2e:1
+    # command: ./docker-entrypoint.sh
+    # command: ["./wait-for-grid.sh", "npm", "run", "nw"]
+    depends_on:
+      - chrome
